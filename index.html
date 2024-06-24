@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Hello world</title>
+	<link data-require="mocha@*" data-semver="1.13.0" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/mocha/1.13.0/mocha.css"
+	/>
+	<script data-require="mocha@*" data-semver="1.13.0" src="//cdnjs.cloudflare.com/ajax/libs/mocha/1.13.0/mocha.js">
+	</script>
+	<script data-require="mocha-chai@1.9.0" data-semver="1.9.0" src="//cdnjs.cloudflare.com/ajax/libs/chai/1.9.0/chai.js">
+	</script>
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+	<div id="text">
+		Hello <strong>world</strong>
+	  <p class="world">This is the p 1</p>
+
+	  <p class="rabbit">This is the p 2</p>
+
+	  <p>This is the p 3</p>
+
+	  <p>Hello world !</p>
+
+	  <!--
+	    <p>Not displayed hello world</p>
+	  -->
+		
+	  <p>It's 9 o'clock, I will send you an e-mail.</p>
+
+	  <p>Is this the 'main'?</p>
+
+	  <p>This is a
+	               multiline paragraph</p>
+	  <pre>
+	    <div>This is some math in HTML</div>
+	    const n = 2;
+
+	    if (1 < n && n > 4) console.log(n);
+	  </pre>
+
+	  <ul>
+	    <li>This is right</li>
+	    <li>This is a copyright</li>
+	  </ul>
+
+	  <script>
+	    console.log('Hello world');
+	  </script>
+  </div>
+
+	<script src="script.js"></script>
+	<div id="mocha"></div>
+	<script>
+		mocha.setup('bdd')
+	</script>
+	<script src="test.js">
+	</script>
+	<script>
+		mocha.run()
+	</script>
+</body>
+</html>
